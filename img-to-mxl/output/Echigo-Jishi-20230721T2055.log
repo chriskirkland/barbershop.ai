@@ -1,0 +1,77 @@
+2023-07-21 20:55:05,102 INFO [Echigo-Jishi]                 Book.java:601  | 1 sheet in examples/Echigo-Jishi.pdf
+2023-07-21 20:55:05,230 INFO []                 Book.java:2515 | Stored /book.xml
+2023-07-21 20:55:05,231 INFO []                 Book.java:2476 | Book stored as /data/output/Echigo-Jishi.omr
+2023-07-21 20:55:05,240 INFO []                 Book.java:1963 | Book reaching PAGE on sheets:[#1]
+2023-07-21 20:55:05,241 INFO [Echigo-Jishi]       StepMonitoring.java:98   | LOAD
+2023-07-21 20:55:05,418 INFO [Echigo-Jishi]                 Book.java:1845 | Loaded image 1 2549x3299 from examples/Echigo-Jishi.pdf
+2023-07-21 20:55:05,421 INFO [Echigo-Jishi]       StepMonitoring.java:98   | BINARY
+2023-07-21 20:55:05,934 INFO [Echigo-Jishi]       StepMonitoring.java:98   | SCALE
+2023-07-21 20:55:05,937 INFO [Echigo-Jishi]         ScaleBuilder.java:234  | Beam  guessed height: 10 -- 0.50 of 21 interline
+2023-07-21 20:55:05,938 INFO [Echigo-Jishi]         ScaleBuilder.java:257  | Beam measured height: 11 -- 0.33 of [6..21] range at 503% of needed quorum
+2023-07-21 20:55:05,939 INFO [Echigo-Jishi]            ScaleStep.java:65   | Scale{ interline(21,21,22) line(2,3,4) beam(11)}
+2023-07-21 20:55:05,940 INFO [Echigo-Jishi]       StepMonitoring.java:98   | GRID
+2023-07-21 20:55:06,067 INFO [Echigo-Jishi]       LinesRetriever.java:1490 | Global slope: 0.00000
+2023-07-21 20:55:06,072 INFO [Echigo-Jishi]    ClustersRetriever.java:334  | Retrieved line clusters: 8 of sizes [5] with interline(21,21,22)
+2023-07-21 20:55:06,298 INFO [Echigo-Jishi]            PeakGraph.java:310  | Systems: #1[1] #2[2] #3[3] #4[4] #5[5] #6[6] #7[7] #8[8]
+2023-07-21 20:55:06,912 INFO [Echigo-Jishi]        SystemManager.java:149  | Indentation detected for system#1
+2023-07-21 20:55:06,914 INFO [Echigo-Jishi]        SystemManager.java:736  | 1 part along 8 systems
+2023-07-21 20:55:06,915 INFO [Echigo-Jishi]                 Book.java:584  | Created scores: [{Score 1}]
+2023-07-21 20:55:06,916 INFO [Echigo-Jishi]       StepMonitoring.java:98   | HEADERS
+2023-07-21 20:55:07,034 INFO [Echigo-Jishi]       StepMonitoring.java:98   | STEM_SEEDS
+2023-07-21 20:55:07,251 WARN [Echigo-Jishi]            SheetStub.java:1374 | Error in performing [LOAD, BINARY, SCALE, GRID, HEADERS, STEM_SEEDS, BEAMS, LEDGERS, HEADS, STEMS, REDUCTION, CUE_BEAMS, TEXTS, MEASURES, CHORDS, CURVES, SYMBOLS, LINKS, RHYTHMS, PAGE] java.util.concurrent.ExecutionException: java.lang.OutOfMemoryError: Java heap space
+java.util.concurrent.ExecutionException: java.lang.OutOfMemoryError: Java heap space
+	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:205)
+	at org.audiveris.omr.sheet.SheetStub.doOneStep(SheetStub.java:570)
+	at org.audiveris.omr.sheet.SheetStub.reachStep(SheetStub.java:1358)
+	at org.audiveris.omr.sheet.Book.reachBookStep(Book.java:2023)
+	at org.audiveris.omr.sheet.Book.transcribe(Book.java:2577)
+	at org.audiveris.omr.sheet.Book.export(Book.java:634)
+	at org.audiveris.omr.CLI$ProcessingTask.processBook(CLI.java:887)
+	at org.audiveris.omr.CLI$CliTask.call(CLI.java:490)
+	at org.audiveris.omr.Main.runBatchTasks(Main.java:363)
+	at org.audiveris.omr.Main.main(Main.java:252)
+	at Audiveris.main(Audiveris.java:50)
+Caused by: java.lang.OutOfMemoryError: Java heap space
+	at java.desktop/java.awt.image.DataBufferInt.<init>(DataBufferInt.java:75)
+	at java.desktop/java.awt.image.Raster.createPackedRaster(Raster.java:539)
+	at java.desktop/java.awt.image.DirectColorModel.createCompatibleWritableRaster(DirectColorModel.java:1032)
+	at java.desktop/java.awt.image.BufferedImage.<init>(BufferedImage.java:333)
+	at java.desktop/sun.java2d.loops.GraphicsPrimitive.convertFrom(GraphicsPrimitive.java:572)
+	at java.desktop/sun.java2d.loops.GraphicsPrimitive.convertFrom(GraphicsPrimitive.java:556)
+	at java.desktop/sun.java2d.loops.MaskBlit$General.MaskBlit(MaskBlit.java:189)
+	at java.desktop/sun.java2d.loops.Blit$GeneralMaskBlit.Blit(Blit.java:204)
+	at java.desktop/sun.java2d.pipe.DrawImage.blitSurfaceData(DrawImage.java:986)
+	at java.desktop/sun.java2d.pipe.DrawImage.renderImageCopy(DrawImage.java:583)
+	at java.desktop/sun.java2d.pipe.DrawImage.copyImage(DrawImage.java:69)
+	at java.desktop/sun.java2d.pipe.DrawImage.copyImage(DrawImage.java:1041)
+	at java.desktop/sun.java2d.pipe.ValidatePipe.copyImage(ValidatePipe.java:186)
+	at java.desktop/sun.java2d.SunGraphics2D.drawImage(SunGraphics2D.java:3430)
+	at java.desktop/sun.java2d.SunGraphics2D.drawImage(SunGraphics2D.java:3406)
+	at org.audiveris.omr.sheet.stem.StemScaler.getBuffer(StemScaler.java:211)
+	at org.audiveris.omr.sheet.stem.StemScaler.retrieveStemWidth(StemScaler.java:247)
+	at org.audiveris.omr.sheet.stem.StemSeedsStep.doProlog(StemSeedsStep.java:84)
+	at org.audiveris.omr.sheet.stem.StemSeedsStep.doProlog(StemSeedsStep.java:41)
+	at org.audiveris.omr.step.AbstractSystemStep.doit(AbstractSystemStep.java:122)
+	at org.audiveris.omr.step.OmrStep.doit(OmrStep.java:138)
+	at org.audiveris.omr.sheet.SheetStub.lambda$doOneStep$2(SheetStub.java:555)
+	at org.audiveris.omr.sheet.SheetStub$$Lambda$94/0x00000008011a2660.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-07-21 20:55:07,254 INFO [Echigo-Jishi]                 Book.java:2535 | Book{Echigo-Jishi} storing
+2023-07-21 20:55:07,371 INFO [Echigo-Jishi]                 Book.java:2515 | Stored /book.xml
+2023-07-21 20:55:07,437 INFO [Echigo-Jishi]           DataHolder.java:348  | Stored /sheet#1/BINARY.png
+2023-07-21 20:55:07,474 INFO [Echigo-Jishi]                Sheet.java:1529 | Stored /sheet#1/sheet#1.xml
+2023-07-21 20:55:07,476 INFO [Echigo-Jishi]                 Book.java:2476 | Book stored as /data/output/Echigo-Jishi.omr
+2023-07-21 20:55:07,495 INFO [Echigo-Jishi]            SheetStub.java:1605 | Disposed sheet
+2023-07-21 20:55:07,675 INFO [Echigo-Jishi]                 Book.java:2035 | End of Stub#1 memory: 294,884,592
+2023-07-21 20:55:07,676 INFO [Echigo-Jishi]                Score.java:885  | PartCollation needed in {Score 1}
+2023-07-21 20:55:08,090 INFO [Echigo-Jishi]            SheetStub.java:1044 | Loaded /sheet#1/sheet#1.xml
+2023-07-21 20:55:08,091 INFO [Echigo-Jishi]                 Book.java:2090 | Scores built: 1
+2023-07-21 20:55:08,094 INFO [Echigo-Jishi]      PartwiseBuilder.java:2645 | Exporting sheet(s): [#1]
+2023-07-21 20:55:08,098 INFO [Echigo-Jishi]        ScoreExporter.java:164  | Score Echigo-Jishi exported to /data/output/Echigo-Jishi.mxl
+2023-07-21 20:55:08,187 INFO [Echigo-Jishi]                 Book.java:2515 | Stored /book.xml
+2023-07-21 20:55:08,188 INFO [Echigo-Jishi]                 Book.java:2476 | Book stored as /data/output/Echigo-Jishi.omr
+2023-07-21 20:55:08,220 INFO [Echigo-Jishi]                Score.java:187  | Closing {Score 1}

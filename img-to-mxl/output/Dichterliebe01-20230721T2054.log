@@ -1,0 +1,110 @@
+2023-07-21 20:54:39,718 INFO [Dichterliebe01]                 Book.java:601  | 2 sheets in examples/Dichterliebe01.pdf
+2023-07-21 20:54:39,803 INFO []                 Book.java:2515 | Stored /book.xml
+2023-07-21 20:54:39,804 INFO []                 Book.java:2476 | Book stored as /data/output/Dichterliebe01.omr
+2023-07-21 20:54:39,813 INFO []                 Book.java:1963 | Book reaching PAGE on sheets:[#1#2]
+2023-07-21 20:54:39,814 INFO [Dichterliebe01#1]       StepMonitoring.java:98   | LOAD
+2023-07-21 20:54:39,978 INFO [Dichterliebe01#1]                 Book.java:1845 | Loaded image 1 2549x3299 from examples/Dichterliebe01.pdf
+2023-07-21 20:54:39,980 INFO [Dichterliebe01#1]       StepMonitoring.java:98   | BINARY
+2023-07-21 20:54:40,501 INFO [Dichterliebe01#1]       StepMonitoring.java:98   | SCALE
+2023-07-21 20:54:40,503 INFO [Dichterliebe01#1]         ScaleBuilder.java:234  | Beam  guessed height: 10 -- 0.50 of 19 interline
+2023-07-21 20:54:40,504 INFO [Dichterliebe01#1]         ScaleBuilder.java:257  | Beam measured height:  9 -- 0.29 of [5..19] range at 730% of needed quorum
+2023-07-21 20:54:40,505 INFO [Dichterliebe01#1]            ScaleStep.java:65   | Scale{ interline(18,19,19) line(2,2,4) beam(9)}
+2023-07-21 20:54:40,506 INFO [Dichterliebe01#1]       StepMonitoring.java:98   | GRID
+2023-07-21 20:54:40,630 INFO [Dichterliebe01#1]       LinesRetriever.java:1490 | Global slope: 0.00000
+2023-07-21 20:54:40,637 INFO [Dichterliebe01#1]    ClustersRetriever.java:334  | Retrieved line clusters: 9 of sizes [5] with interline(18,19,19)
+2023-07-21 20:54:40,740 INFO [Dichterliebe01#1]            PeakGraph.java:310  | Systems: #1[1, 2, 3] #2[4, 5, 6] #3[7, 8, 9]
+2023-07-21 20:54:41,080 INFO [Dichterliebe01#1]        SystemManager.java:149  | Indentation detected for system#1
+2023-07-21 20:54:41,082 INFO [Dichterliebe01#1]        SystemManager.java:736  | 2 parts along 3 systems
+2023-07-21 20:54:41,083 INFO [Dichterliebe01#1]                 Book.java:584  | Created scores: [{Score 1}]
+2023-07-21 20:54:41,086 INFO [Dichterliebe01#1]       StepMonitoring.java:98   | HEADERS
+2023-07-21 20:54:41,387 INFO [Dichterliebe01#1]       StepMonitoring.java:98   | STEM_SEEDS
+2023-07-21 20:54:41,459 INFO [Dichterliebe01#1]            ImageUtil.java:204  | Discarding alpha band ...
+2023-07-21 20:54:41,652 INFO [Dichterliebe01#1]            ImageUtil.java:122  | Converting max RGB to gray
+2023-07-21 20:54:41,824 INFO [Dichterliebe01#1]        StemSeedsStep.java:86   | stem(2 max:2)
+2023-07-21 20:54:41,836 INFO [Dichterliebe01#1]       StepMonitoring.java:98   | BEAMS
+2023-07-21 20:54:44,188 INFO [Dichterliebe01#1]       StepMonitoring.java:98   | LEDGERS
+2023-07-21 20:54:44,568 INFO [Dichterliebe01#1]       StepMonitoring.java:98   | HEADS
+2023-07-21 20:54:47,686 INFO [Dichterliebe01#1]        HeadSeedTally.java:235  | Scale information: HeadSeeds{NOTEHEAD_BLACK[L:-0.3,R:-0.3]}
+2023-07-21 20:54:47,687 INFO [Dichterliebe01#1]       StepMonitoring.java:98   | STEMS
+2023-07-21 20:54:48,371 INFO [Dichterliebe01#1]       StepMonitoring.java:98   | REDUCTION
+2023-07-21 20:54:48,407 INFO [Dichterliebe01#1]        ReductionStep.java:93   | Stems free length median value: 65 pixels, 3.4 interlines
+2023-07-21 20:54:48,409 INFO [Dichterliebe01#1]       StepMonitoring.java:98   | CUE_BEAMS
+2023-07-21 20:54:48,410 INFO [Dichterliebe01#1]         CueBeamsStep.java:81   | Step CUE_BEAMS is skipped because small heads switch is off
+2023-07-21 20:54:48,411 INFO [Dichterliebe01#1]       StepMonitoring.java:98   | TEXTS
+2023-07-21 20:54:48,412 WARN [Dichterliebe01#1]            TextsStep.java:97   | TEXTS step: No OCR is available!
+2023-07-21 20:54:48,414 INFO [Dichterliebe01#1]       StepMonitoring.java:98   | MEASURES
+2023-07-21 20:54:48,415 INFO [Dichterliebe01#1]                 Page.java:308  | 12 raw measures: [4 in system#1, 4 in system#2, 4 in system#3]
+2023-07-21 20:54:48,416 INFO [Dichterliebe01#1]       StepMonitoring.java:98   | CHORDS
+2023-07-21 20:54:48,427 INFO [Dichterliebe01#1]       StepMonitoring.java:98   | CURVES
+2023-07-21 20:54:49,101 INFO [Dichterliebe01#1]         SlursBuilder.java:240  | Slurs: 53
+2023-07-21 20:54:49,114 INFO [Dichterliebe01#1]      SegmentsBuilder.java:155  | Segments: 22
+2023-07-21 20:54:49,116 INFO [Dichterliebe01#1]       StepMonitoring.java:98   | SYMBOLS
+2023-07-21 20:54:49,946 INFO [Dichterliebe01#1]       StepMonitoring.java:98   | LINKS
+2023-07-21 20:54:49,984 INFO [Dichterliebe01#1]       StepMonitoring.java:98   | RHYTHMS
+2023-07-21 20:54:50,000 INFO [Dichterliebe01#1]        MeasureRhythm.java:985  | Measure{#12P1} No timeOffset for RestChordInter#6377{(0.634/0.634) stf:7 slot#4 dur:1/4}
+2023-07-21 20:54:50,003 INFO [Dichterliebe01#1]       StepMonitoring.java:98   | PAGE
+2023-07-21 20:54:50,005 INFO [Dichterliebe01#1]                 Book.java:2535 | Book{Dichterliebe01} storing
+2023-07-21 20:54:50,122 INFO [Dichterliebe01#1]                 Book.java:2515 | Stored /book.xml
+2023-07-21 20:54:50,188 INFO [Dichterliebe01#1]           DataHolder.java:348  | Stored /sheet#1/BINARY.png
+2023-07-21 20:54:50,748 INFO [Dichterliebe01#1]                Sheet.java:1529 | Stored /sheet#1/sheet#1.xml
+2023-07-21 20:54:50,750 INFO [Dichterliebe01#1]                 Book.java:2476 | Book stored as /data/output/Dichterliebe01.omr
+2023-07-21 20:54:50,769 INFO [Dichterliebe01#1]            SheetStub.java:1605 | Disposed sheet#1
+2023-07-21 20:54:50,885 INFO [Dichterliebe01#1]                 Book.java:2035 | End of Stub#1 memory: 258,745,488
+2023-07-21 20:54:50,886 INFO [Dichterliebe01#2]       StepMonitoring.java:98   | LOAD
+2023-07-21 20:54:51,082 INFO [Dichterliebe01#2]                 Book.java:1845 | Loaded image 2 2549x3299 from examples/Dichterliebe01.pdf
+2023-07-21 20:54:51,083 INFO [Dichterliebe01#2]       StepMonitoring.java:98   | BINARY
+2023-07-21 20:54:51,621 INFO [Dichterliebe01#2]       StepMonitoring.java:98   | SCALE
+2023-07-21 20:54:51,623 INFO [Dichterliebe01#2]         ScaleBuilder.java:234  | Beam  guessed height: 10 -- 0.50 of 19 interline
+2023-07-21 20:54:51,624 INFO [Dichterliebe01#2]         ScaleBuilder.java:257  | Beam measured height:  9 -- 0.29 of [5..19] range at 838% of needed quorum
+2023-07-21 20:54:51,625 INFO [Dichterliebe01#2]            ScaleStep.java:65   | Scale{ interline(18,19,19) line(2,2,3) beam(9)}
+2023-07-21 20:54:51,626 INFO [Dichterliebe01#2]       StepMonitoring.java:98   | GRID
+2023-07-21 20:54:51,774 INFO [Dichterliebe01#2]       LinesRetriever.java:1490 | Global slope: 0.00000
+2023-07-21 20:54:51,784 INFO [Dichterliebe01#2]    ClustersRetriever.java:334  | Retrieved line clusters: 12 of sizes [5] with interline(18,19,19)
+2023-07-21 20:54:51,857 INFO [Dichterliebe01#2]            PeakGraph.java:310  | Systems: #1[1, 2, 3] #2[4, 5, 6] #3[7, 8, 9] #4[10, 11, 12]
+2023-07-21 20:54:52,107 INFO [Dichterliebe01#2]        SystemManager.java:736  | 2 parts along 4 systems
+2023-07-21 20:54:52,109 INFO [Dichterliebe01#2]       StepMonitoring.java:98   | HEADERS
+2023-07-21 20:54:52,396 INFO [Dichterliebe01#2]       StepMonitoring.java:98   | STEM_SEEDS
+2023-07-21 20:54:52,468 INFO [Dichterliebe01#2]            ImageUtil.java:204  | Discarding alpha band ...
+2023-07-21 20:54:52,708 INFO [Dichterliebe01#2]            ImageUtil.java:122  | Converting max RGB to gray
+2023-07-21 20:54:52,899 INFO [Dichterliebe01#2]        StemSeedsStep.java:86   | stem(2 max:2)
+2023-07-21 20:54:52,909 INFO [Dichterliebe01#2]       StepMonitoring.java:98   | BEAMS
+2023-07-21 20:54:55,277 INFO [Dichterliebe01#2]       StepMonitoring.java:98   | LEDGERS
+2023-07-21 20:54:55,615 INFO [Dichterliebe01#2]       StepMonitoring.java:98   | HEADS
+2023-07-21 20:54:59,669 INFO [Dichterliebe01#2]        HeadSeedTally.java:235  | Scale information: HeadSeeds{NOTEHEAD_BLACK[L:-0.4,R:-0.3]}
+2023-07-21 20:54:59,671 INFO [Dichterliebe01#2]       StepMonitoring.java:98   | STEMS
+2023-07-21 20:55:00,462 INFO [Dichterliebe01#2]       StepMonitoring.java:98   | REDUCTION
+2023-07-21 20:55:00,508 INFO [Dichterliebe01#2]        ReductionStep.java:93   | Stems free length median value: 64 pixels, 3.4 interlines
+2023-07-21 20:55:00,510 INFO [Dichterliebe01#2]       StepMonitoring.java:98   | CUE_BEAMS
+2023-07-21 20:55:00,511 INFO [Dichterliebe01#2]         CueBeamsStep.java:81   | Step CUE_BEAMS is skipped because small heads switch is off
+2023-07-21 20:55:00,512 INFO [Dichterliebe01#2]       StepMonitoring.java:98   | TEXTS
+2023-07-21 20:55:00,513 WARN [Dichterliebe01#2]            TextsStep.java:97   | TEXTS step: No OCR is available!
+2023-07-21 20:55:00,515 INFO [Dichterliebe01#2]       StepMonitoring.java:98   | MEASURES
+2023-07-21 20:55:00,517 INFO [Dichterliebe01#2]                 Page.java:308  | 15 raw measures: [4 in system#1, 4 in system#2, 3 in system#3, 4 in system#4]
+2023-07-21 20:55:00,517 INFO [Dichterliebe01#2]       StepMonitoring.java:98   | CHORDS
+2023-07-21 20:55:00,523 INFO [Dichterliebe01#2]       StepMonitoring.java:98   | CURVES
+2023-07-21 20:55:01,367 INFO [Dichterliebe01#2]         SlursBuilder.java:240  | Slurs: 55
+2023-07-21 20:55:01,377 INFO [Dichterliebe01#2]      SegmentsBuilder.java:155  | Segments: 29
+2023-07-21 20:55:01,379 INFO [Dichterliebe01#2]       StepMonitoring.java:98   | SYMBOLS
+2023-07-21 20:55:02,041 INFO [Dichterliebe01#2]       StepMonitoring.java:98   | LINKS
+2023-07-21 20:55:02,073 INFO [Dichterliebe01#2]        SymbolsLinker.java:424  | No chord above PedalInter#7771{(0.764) PEDAL_UP_MARK}
+2023-07-21 20:55:02,074 INFO [Dichterliebe01#2]        SymbolsLinker.java:424  | No chord above PedalInter#7773{(0.800) PEDAL_UP_MARK}
+2023-07-21 20:55:02,084 INFO [Dichterliebe01#2]       StepMonitoring.java:98   | RHYTHMS
+2023-07-21 20:55:02,085 INFO [Dichterliebe01#2]           PageRhythm.java:201  | {Page#2.1} Time value reused from sheet#1
+2023-07-21 20:55:02,106 INFO [Dichterliebe01#2]       StepMonitoring.java:98   | PAGE
+2023-07-21 20:55:02,110 INFO [Dichterliebe01#2]                 Book.java:2535 | Book{Dichterliebe01} storing
+2023-07-21 20:55:02,207 INFO [Dichterliebe01#2]                 Book.java:2515 | Stored /book.xml
+2023-07-21 20:55:02,275 INFO [Dichterliebe01#2]           DataHolder.java:348  | Stored /sheet#2/BINARY.png
+2023-07-21 20:55:02,950 INFO [Dichterliebe01#2]                Sheet.java:1529 | Stored /sheet#2/sheet#2.xml
+2023-07-21 20:55:02,952 INFO [Dichterliebe01#2]                 Book.java:2476 | Book stored as /data/output/Dichterliebe01.omr
+2023-07-21 20:55:03,008 INFO [Dichterliebe01#2]            SheetStub.java:1605 | Disposed sheet#2
+2023-07-21 20:55:03,117 INFO [Dichterliebe01#2]                 Book.java:2035 | End of Stub#2 memory: 258,695,096
+2023-07-21 20:55:03,495 INFO [Dichterliebe01]            SheetStub.java:1044 | Loaded /sheet#1/sheet#1.xml
+2023-07-21 20:55:03,813 INFO [Dichterliebe01]            SheetStub.java:1044 | Loaded /sheet#2/sheet#2.xml
+2023-07-21 20:55:03,814 INFO [Dichterliebe01]                 Book.java:2090 | Scores built: 1
+2023-07-21 20:55:03,817 INFO [Dichterliebe01]      PartwiseBuilder.java:2645 | Exporting sheet(s): [#1#2]
+2023-07-21 20:55:03,847 INFO [Dichterliebe01]        ScoreExporter.java:164  | Score Dichterliebe01 exported to /data/output/Dichterliebe01.mxl
+2023-07-21 20:55:03,960 INFO [Dichterliebe01]                 Book.java:2515 | Stored /book.xml
+2023-07-21 20:55:04,421 INFO [Dichterliebe01]                Sheet.java:1529 | Stored /sheet#1/sheet#1.xml
+2023-07-21 20:55:04,975 INFO [Dichterliebe01]                Sheet.java:1529 | Stored /sheet#2/sheet#2.xml
+2023-07-21 20:55:04,976 INFO [Dichterliebe01]                 Book.java:2476 | Book stored as /data/output/Dichterliebe01.omr
+2023-07-21 20:55:05,027 INFO [Dichterliebe01]                Score.java:187  | Closing {Score 1}

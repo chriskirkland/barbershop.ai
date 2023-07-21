@@ -1,0 +1,68 @@
+2023-07-21 20:57:24,114 INFO [HeartofMyHeart]                 Book.java:601  | 1 sheet in examples/HeartofMyHeart.pdf
+2023-07-21 20:57:24,317 INFO []                 Book.java:2515 | Stored /book.xml
+2023-07-21 20:57:24,318 INFO []                 Book.java:2476 | Book stored as /data/output/HeartofMyHeart.omr
+2023-07-21 20:57:24,340 INFO []                 Book.java:1963 | Book reaching PAGE on sheets:[#1]
+2023-07-21 20:57:24,343 INFO [HeartofMyHeart]       StepMonitoring.java:98   | LOAD
+2023-07-21 20:57:24,656 INFO [HeartofMyHeart]                 Book.java:1845 | Loaded image 1 2549x3299 from examples/HeartofMyHeart.pdf
+2023-07-21 20:57:24,662 INFO [HeartofMyHeart]       StepMonitoring.java:98   | BINARY
+2023-07-21 20:57:25,323 INFO [HeartofMyHeart]       StepMonitoring.java:98   | SCALE
+2023-07-21 20:57:25,352 INFO [HeartofMyHeart]         ScaleBuilder.java:234  | Beam  guessed height: 10 -- 0.50 of 21 interline
+2023-07-21 20:57:25,355 INFO [HeartofMyHeart]         ScaleBuilder.java:257  | Beam measured height:  7 -- 0.07 of [6..21] range at 251% of needed quorum
+2023-07-21 20:57:25,357 INFO [HeartofMyHeart]            ScaleStep.java:65   | Scale{ interline(21,21,22) line(2,3,4) beam(7)}
+2023-07-21 20:57:25,359 INFO [HeartofMyHeart]       StepMonitoring.java:98   | GRID
+2023-07-21 20:57:25,904 INFO [HeartofMyHeart]       LinesRetriever.java:1490 | Global slope: 0.00000
+2023-07-21 20:57:25,941 INFO [HeartofMyHeart]    ClustersRetriever.java:850  | Pairing clusters CC127 & CC108
+2023-07-21 20:57:25,943 INFO [HeartofMyHeart]    ClustersRetriever.java:850  | Pairing clusters CC397 & CC389
+2023-07-21 20:57:25,946 INFO [HeartofMyHeart]    ClustersRetriever.java:334  | Retrieved line clusters: 8 of sizes [5] with interline(21,21,22)
+2023-07-21 20:57:26,215 INFO [HeartofMyHeart]            PeakGraph.java:310  | Systems: #1[1, 2] #2[3, 4] #3[5, 6] #4[7, 8]
+2023-07-21 20:57:26,255 INFO [HeartofMyHeart]        BarsRetriever.java:1586 | Staff#1 serif normalized weight too small 0.05 vs 0.2
+2023-07-21 20:57:26,261 INFO [HeartofMyHeart]        BarsRetriever.java:1586 | Staff#2 serif normalized weight too small 0.06 vs 0.2
+2023-07-21 20:57:26,266 INFO [HeartofMyHeart]        BarsRetriever.java:1586 | Staff#3 serif normalized weight too small 0.06 vs 0.2
+2023-07-21 20:57:26,273 INFO [HeartofMyHeart]        BarsRetriever.java:1586 | Staff#4 serif normalized weight too small 0.06 vs 0.2
+2023-07-21 20:57:26,278 INFO [HeartofMyHeart]        BarsRetriever.java:1586 | Staff#5 serif normalized weight too small 0.06 vs 0.2
+2023-07-21 20:57:26,282 INFO [HeartofMyHeart]        BarsRetriever.java:1586 | Staff#6 serif normalized weight too small 0.04 vs 0.2
+2023-07-21 20:57:26,287 INFO [HeartofMyHeart]        BarsRetriever.java:1586 | Staff#7 serif normalized weight too small 0.05 vs 0.2
+2023-07-21 20:57:26,291 INFO [HeartofMyHeart]        BarsRetriever.java:1586 | Staff#8 serif normalized weight too small 0.06 vs 0.2
+2023-07-21 20:57:27,016 INFO [HeartofMyHeart]        SystemManager.java:149  | Indentation detected for system#1
+2023-07-21 20:57:27,018 INFO [HeartofMyHeart]        SystemManager.java:736  | 2 parts along 4 systems
+2023-07-21 20:57:27,022 INFO [HeartofMyHeart]                 Book.java:584  | Created scores: [{Score 1}]
+2023-07-21 20:57:27,024 INFO [HeartofMyHeart]       StepMonitoring.java:98   | HEADERS
+2023-07-21 20:57:27,321 INFO [HeartofMyHeart]      BasicClassifier.java:277  | Classifier loaded XML norms.
+2023-07-21 20:57:27,331 INFO [HeartofMyHeart]   AbstractClassifier.java:396  | Classifier data loaded from default uri jar:file:/audiveris/Audiveris-5.3.1/lib/audiveris.jar!/res/basic-classifier.zip
+2023-07-21 20:57:28,316 INFO [HeartofMyHeart]       StepMonitoring.java:98   | STEM_SEEDS
+2023-07-21 20:57:28,422 INFO [HeartofMyHeart]            ImageUtil.java:204  | Discarding alpha band ...
+2023-07-21 20:57:28,606 INFO [HeartofMyHeart]            ImageUtil.java:122  | Converting max RGB to gray
+2023-07-21 20:57:28,874 INFO [HeartofMyHeart]        StemSeedsStep.java:86   | stem(3 max:3)
+2023-07-21 20:57:28,942 INFO [HeartofMyHeart]       StepMonitoring.java:98   | BEAMS
+2023-07-21 20:57:31,157 INFO [HeartofMyHeart]       StepMonitoring.java:98   | LEDGERS
+2023-07-21 20:57:31,688 INFO [HeartofMyHeart]       StepMonitoring.java:98   | HEADS
+2023-07-21 20:57:36,502 INFO [HeartofMyHeart]        HeadSeedTally.java:235  | Scale information: HeadSeeds{NOTEHEAD_VOID[L:-0.5,R:-0.5] NOTEHEAD_BLACK[L:-0.5,R:-0.3]}
+2023-07-21 20:57:36,505 INFO [HeartofMyHeart]       StepMonitoring.java:98   | STEMS
+2023-07-21 20:57:37,453 INFO [HeartofMyHeart]       StepMonitoring.java:98   | REDUCTION
+2023-07-21 20:57:37,553 INFO [HeartofMyHeart]        ReductionStep.java:93   | Stems free length median value: 54 pixels, 2.6 interlines
+2023-07-21 20:57:37,555 INFO [HeartofMyHeart]       StepMonitoring.java:98   | CUE_BEAMS
+2023-07-21 20:57:37,557 INFO [HeartofMyHeart]         CueBeamsStep.java:81   | Step CUE_BEAMS is skipped because small heads switch is off
+2023-07-21 20:57:37,558 INFO [HeartofMyHeart]       StepMonitoring.java:98   | TEXTS
+2023-07-21 20:57:37,562 WARN [HeartofMyHeart]            TextsStep.java:97   | TEXTS step: No OCR is available!
+2023-07-21 20:57:37,576 INFO [HeartofMyHeart]       StepMonitoring.java:98   | MEASURES
+2023-07-21 20:57:37,592 INFO [HeartofMyHeart]                 Page.java:308  | 34 raw measures: [7 in system#1, 9 in system#2, 8 in system#3, 10 in system#4]
+2023-07-21 20:57:37,593 INFO [HeartofMyHeart]       StepMonitoring.java:98   | CHORDS
+2023-07-21 20:57:37,615 INFO [HeartofMyHeart]       StepMonitoring.java:98   | CURVES
+2023-07-21 20:57:38,729 INFO [HeartofMyHeart]         SlursBuilder.java:240  | Slurs: 37
+2023-07-21 20:57:38,763 INFO [HeartofMyHeart]      SegmentsBuilder.java:155  | Segments: 41
+2023-07-21 20:57:38,777 INFO [HeartofMyHeart]       StepMonitoring.java:98   | SYMBOLS
+2023-07-21 20:57:40,843 INFO [HeartofMyHeart]       StepMonitoring.java:98   | LINKS
+2023-07-21 20:57:40,852 INFO [HeartofMyHeart]        SymbolsLinker.java:289  | No chord linked to OctaveShiftInter#7009{(0.168) stf:2 OTTAVA ALTA}
+2023-07-21 20:57:40,918 INFO [HeartofMyHeart]       StepMonitoring.java:98   | RHYTHMS
+2023-07-21 20:57:40,985 INFO [HeartofMyHeart]       StepMonitoring.java:98   | PAGE
+2023-07-21 20:57:40,994 INFO [HeartofMyHeart]                 Book.java:2535 | Book{HeartofMyHeart} storing
+2023-07-21 20:57:41,056 INFO [HeartofMyHeart]                 Book.java:2515 | Stored /book.xml
+2023-07-21 20:57:41,279 INFO [HeartofMyHeart]           DataHolder.java:348  | Stored /sheet#1/BINARY.png
+2023-07-21 20:57:42,173 INFO [HeartofMyHeart]                Sheet.java:1529 | Stored /sheet#1/sheet#1.xml
+2023-07-21 20:57:42,175 INFO [HeartofMyHeart]                 Book.java:2476 | Book stored as /data/output/HeartofMyHeart.omr
+2023-07-21 20:57:42,189 INFO [HeartofMyHeart]            SheetStub.java:1605 | Disposed sheet
+2023-07-21 20:57:42,234 INFO [HeartofMyHeart]                 Book.java:2035 | End of Stub#1 memory: 30,169,592
+2023-07-21 20:57:43,056 INFO [HeartofMyHeart]            SheetStub.java:1044 | Loaded /sheet#1/sheet#1.xml
+2023-07-21 20:57:43,353 INFO [HeartofMyHeart]      PartwiseBuilder.java:2645 | Exporting sheet(s): [#1]
+2023-07-21 20:57:43,460 INFO [HeartofMyHeart]        ScoreExporter.java:164  | Score HeartofMyHeart exported to /data/output/HeartofMyHeart.mxl
+2023-07-21 20:57:43,494 INFO [HeartofMyHeart]                Score.java:187  | Closing {Score 1}

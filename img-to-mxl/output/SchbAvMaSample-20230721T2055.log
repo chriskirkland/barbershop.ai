@@ -1,0 +1,52 @@
+2023-07-21 20:55:24,387 INFO [SchbAvMaSample]                 Book.java:601  | 1 sheet in examples/SchbAvMaSample.pdf
+2023-07-21 20:55:24,480 INFO []                 Book.java:2515 | Stored /book.xml
+2023-07-21 20:55:24,480 INFO []                 Book.java:2476 | Book stored as /data/output/SchbAvMaSample.omr
+2023-07-21 20:55:24,490 INFO []                 Book.java:1963 | Book reaching PAGE on sheets:[#1]
+2023-07-21 20:55:24,490 INFO [SchbAvMaSample]       StepMonitoring.java:98   | LOAD
+2023-07-21 20:55:24,782 INFO [SchbAvMaSample]                 Book.java:1845 | Loaded image 1 2549x3299 from examples/SchbAvMaSample.pdf
+2023-07-21 20:55:24,786 INFO [SchbAvMaSample]       StepMonitoring.java:98   | BINARY
+2023-07-21 20:55:25,331 INFO [SchbAvMaSample]       StepMonitoring.java:98   | SCALE
+2023-07-21 20:55:25,334 INFO [SchbAvMaSample]         ScaleBuilder.java:234  | Beam  guessed height: 10 -- 0.50 of 19 interline
+2023-07-21 20:55:25,335 INFO [SchbAvMaSample]         ScaleBuilder.java:257  | Beam measured height:  9 -- 0.29 of [5..19] range at 742% of needed quorum
+2023-07-21 20:55:25,336 INFO [SchbAvMaSample]            ScaleStep.java:65   | Scale{ interline(18,19,19) line(1,2,3) beam(9)}
+2023-07-21 20:55:25,337 INFO [SchbAvMaSample]       StepMonitoring.java:98   | GRID
+2023-07-21 20:55:25,577 INFO [SchbAvMaSample]       LinesRetriever.java:1490 | Global slope: 0.00000
+2023-07-21 20:55:25,586 INFO [SchbAvMaSample]    ClustersRetriever.java:334  | Retrieved line clusters: 11 of sizes [5] with interline(18,19,19)
+2023-07-21 20:55:25,799 INFO [SchbAvMaSample]            PeakGraph.java:310  | Systems: #1[1, 2] #2[3, 4, 5] #3[6, 7, 8] #4[9, 10, 11]
+2023-07-21 20:55:26,399 INFO [SchbAvMaSample]        SystemManager.java:149  | Indentation detected for system#1
+2023-07-21 20:55:26,400 INFO [SchbAvMaSample]        SystemManager.java:736  | 2 parts along 4 systems
+2023-07-21 20:55:26,401 INFO [SchbAvMaSample]                 Book.java:584  | Created scores: [{Score 1}]
+2023-07-21 20:55:26,402 INFO [SchbAvMaSample]       StepMonitoring.java:98   | HEADERS
+2023-07-21 20:55:26,677 INFO [SchbAvMaSample]       StepMonitoring.java:98   | STEM_SEEDS
+2023-07-21 20:55:27,058 WARN [SchbAvMaSample]            SheetStub.java:1374 | Error in performing [LOAD, BINARY, SCALE, GRID, HEADERS, STEM_SEEDS, BEAMS, LEDGERS, HEADS, STEMS, REDUCTION, CUE_BEAMS, TEXTS, MEASURES, CHORDS, CURVES, SYMBOLS, LINKS, RHYTHMS, PAGE] java.util.concurrent.ExecutionException: java.lang.OutOfMemoryError: Java heap space
+java.util.concurrent.ExecutionException: java.lang.OutOfMemoryError: Java heap space
+	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:205)
+	at org.audiveris.omr.sheet.SheetStub.doOneStep(SheetStub.java:570)
+	at org.audiveris.omr.sheet.SheetStub.reachStep(SheetStub.java:1358)
+	at org.audiveris.omr.sheet.Book.reachBookStep(Book.java:2023)
+	at org.audiveris.omr.sheet.Book.transcribe(Book.java:2577)
+	at org.audiveris.omr.sheet.Book.export(Book.java:634)
+	at org.audiveris.omr.CLI$ProcessingTask.processBook(CLI.java:887)
+	at org.audiveris.omr.CLI$CliTask.call(CLI.java:490)
+	at org.audiveris.omr.Main.runBatchTasks(Main.java:363)
+	at org.audiveris.omr.Main.main(Main.java:252)
+	at Audiveris.main(Audiveris.java:50)
+Caused by: java.lang.OutOfMemoryError: Java heap space
+2023-07-21 20:55:27,061 INFO [SchbAvMaSample]                 Book.java:2535 | Book{SchbAvMaSample} storing
+2023-07-21 20:55:27,205 INFO [SchbAvMaSample]                 Book.java:2515 | Stored /book.xml
+2023-07-21 20:55:27,277 INFO [SchbAvMaSample]           DataHolder.java:348  | Stored /sheet#1/BINARY.png
+2023-07-21 20:55:27,342 INFO [SchbAvMaSample]                Sheet.java:1529 | Stored /sheet#1/sheet#1.xml
+2023-07-21 20:55:27,344 INFO [SchbAvMaSample]                 Book.java:2476 | Book stored as /data/output/SchbAvMaSample.omr
+2023-07-21 20:55:27,360 INFO [SchbAvMaSample]            SheetStub.java:1605 | Disposed sheet
+2023-07-21 20:55:27,520 INFO [SchbAvMaSample]                 Book.java:2035 | End of Stub#1 memory: 397,365,152
+2023-07-21 20:55:27,522 INFO [SchbAvMaSample]                Score.java:885  | PartCollation needed in {Score 1}
+2023-07-21 20:55:27,964 INFO [SchbAvMaSample]            SheetStub.java:1044 | Loaded /sheet#1/sheet#1.xml
+2023-07-21 20:55:27,965 INFO [SchbAvMaSample]                 Book.java:2090 | Scores built: 1
+2023-07-21 20:55:27,969 INFO [SchbAvMaSample]      PartwiseBuilder.java:2645 | Exporting sheet(s): [#1]
+2023-07-21 20:55:27,970 INFO [SchbAvMaSample]                 Part.java:353  | Sheet#1 System#1 Part#2{ staves[1,2] configs:[5,5]} dummyPart id: 1
+2023-07-21 20:55:27,974 INFO [SchbAvMaSample]        ScoreExporter.java:164  | Score SchbAvMaSample exported to /data/output/SchbAvMaSample.mxl
+2023-07-21 20:55:28,061 INFO [SchbAvMaSample]                 Book.java:2515 | Stored /book.xml
+2023-07-21 20:55:28,132 INFO [SchbAvMaSample]                Sheet.java:1529 | Stored /sheet#1/sheet#1.xml
+2023-07-21 20:55:28,133 INFO [SchbAvMaSample]                 Book.java:2476 | Book stored as /data/output/SchbAvMaSample.omr
+2023-07-21 20:55:28,167 INFO [SchbAvMaSample]                Score.java:187  | Closing {Score 1}

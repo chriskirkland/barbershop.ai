@@ -1,0 +1,74 @@
+2023-07-21 20:53:59,565 INFO [BrookeWestSample]                 Book.java:601  | 1 sheet in examples/BrookeWestSample.pdf
+2023-07-21 20:53:59,685 INFO []                 Book.java:2515 | Stored /book.xml
+2023-07-21 20:53:59,685 INFO []                 Book.java:2476 | Book stored as /data/output/BrookeWestSample.omr
+2023-07-21 20:53:59,695 INFO []                 Book.java:1963 | Book reaching PAGE on sheets:[#1]
+2023-07-21 20:53:59,696 INFO [BrookeWestSample]       StepMonitoring.java:98   | LOAD
+2023-07-21 20:53:59,871 INFO [BrookeWestSample]                 Book.java:1845 | Loaded image 1 2549x3299 from examples/BrookeWestSample.pdf
+2023-07-21 20:53:59,873 INFO [BrookeWestSample]       StepMonitoring.java:98   | BINARY
+2023-07-21 20:54:00,445 INFO [BrookeWestSample]       StepMonitoring.java:98   | SCALE
+2023-07-21 20:54:00,448 INFO [BrookeWestSample]         ScaleBuilder.java:234  | Beam  guessed height: 20 -- 0.50 of 39 interline
+2023-07-21 20:54:00,449 INFO [BrookeWestSample]         ScaleBuilder.java:257  | Beam measured height: 12 -- 0.04 of [11..39] range at 261% of needed quorum
+2023-07-21 20:54:00,450 INFO [BrookeWestSample]            ScaleStep.java:65   | Scale{ smallinterline(21,21,22) interline(39,39,40) line(3,3,4) beam(12)}
+2023-07-21 20:54:00,451 INFO [BrookeWestSample]       StepMonitoring.java:98   | GRID
+2023-07-21 20:54:00,586 INFO [BrookeWestSample]       LinesRetriever.java:1490 | Global slope: 0.00000
+2023-07-21 20:54:00,590 INFO [BrookeWestSample]    ClustersRetriever.java:334  | Retrieved line clusters: 5 of sizes [5] with interline(39,39,40)
+2023-07-21 20:54:00,591 INFO [BrookeWestSample]       LinesRetriever.java:1506 | Searching clusters with smallInterline: 21
+2023-07-21 20:54:00,593 INFO [BrookeWestSample]    ClustersRetriever.java:334  | Retrieved line clusters: 3 of sizes [5] with interline(21,21,22)
+2023-07-21 20:54:00,616 INFO [BrookeWestSample]            PeakGraph.java:310  | Systems: #1[1] #2[2] #3[3, 4] #4[5, 6] #5[7, 8]
+2023-07-21 20:54:00,735 INFO [BrookeWestSample]        SystemManager.java:736  | 2 parts along 5 systems
+2023-07-21 20:54:00,737 INFO [BrookeWestSample]                 Book.java:584  | Created scores: [{Score 1}]
+2023-07-21 20:54:00,738 INFO [BrookeWestSample]       StepMonitoring.java:98   | HEADERS
+2023-07-21 20:54:00,871 WARN [BrookeWestSample]          ClefBuilder.java:657  | Staff#1 no header clef.
+2023-07-21 20:54:00,937 WARN [BrookeWestSample]          ClefBuilder.java:657  | Staff#2 no header clef.
+2023-07-21 20:54:00,975 WARN [BrookeWestSample]          ClefBuilder.java:657  | Staff#4 no header clef.
+2023-07-21 20:54:01,032 WARN [BrookeWestSample]          ClefBuilder.java:657  | Staff#6 no header clef.
+2023-07-21 20:54:01,084 WARN [BrookeWestSample]          ClefBuilder.java:657  | Staff#8 no header clef.
+2023-07-21 20:54:01,105 INFO [BrookeWestSample]       StepMonitoring.java:98   | STEM_SEEDS
+2023-07-21 20:54:01,178 INFO [BrookeWestSample]            ImageUtil.java:204  | Discarding alpha band ...
+2023-07-21 20:54:01,347 INFO [BrookeWestSample]            ImageUtil.java:122  | Converting max RGB to gray
+2023-07-21 20:54:01,465 INFO [BrookeWestSample]        StemSeedsStep.java:86   | stem(3 max:5)
+2023-07-21 20:54:01,471 INFO [BrookeWestSample]       StepMonitoring.java:98   | BEAMS
+2023-07-21 20:54:04,726 INFO [BrookeWestSample]       StepMonitoring.java:98   | LEDGERS
+2023-07-21 20:54:05,030 INFO [BrookeWestSample]       StepMonitoring.java:98   | HEADS
+2023-07-21 20:54:17,301 INFO [BrookeWestSample]        HeadSeedTally.java:235  | Scale information: HeadSeeds{NOTEHEAD_BLACK[R:0.3]}
+2023-07-21 20:54:17,304 INFO [BrookeWestSample]       StepMonitoring.java:98   | STEMS
+2023-07-21 20:54:17,524 INFO [BrookeWestSample]       StepMonitoring.java:98   | REDUCTION
+2023-07-21 20:54:17,534 INFO [BrookeWestSample]        ReductionStep.java:93   | Stems free length median value: 86 pixels, 2.2 interlines
+2023-07-21 20:54:17,535 INFO [BrookeWestSample]       StepMonitoring.java:98   | CUE_BEAMS
+2023-07-21 20:54:17,536 INFO [BrookeWestSample]         CueBeamsStep.java:81   | Step CUE_BEAMS is skipped because small heads switch is off
+2023-07-21 20:54:17,538 INFO [BrookeWestSample]       StepMonitoring.java:98   | TEXTS
+2023-07-21 20:54:17,539 WARN [BrookeWestSample]            TextsStep.java:97   | TEXTS step: No OCR is available!
+2023-07-21 20:54:17,541 INFO [BrookeWestSample]       StepMonitoring.java:98   | MEASURES
+2023-07-21 20:54:17,543 INFO [BrookeWestSample]                 Page.java:308  | 17 raw measures: [4 in system#1, 5 in system#2, 3 in system#3, 2 in system#4, 3 in system#5]
+2023-07-21 20:54:17,544 INFO [BrookeWestSample]       StepMonitoring.java:98   | CHORDS
+2023-07-21 20:54:17,545 INFO [BrookeWestSample]       StepMonitoring.java:98   | CURVES
+2023-07-21 20:54:22,224 INFO [BrookeWestSample]         SlursBuilder.java:240  | Slurs: 13
+2023-07-21 20:54:22,991 INFO [BrookeWestSample]      SegmentsBuilder.java:155  | Segments: 11
+2023-07-21 20:54:22,996 INFO [BrookeWestSample]       StepMonitoring.java:98   | SYMBOLS
+2023-07-21 20:54:26,200 INFO [BrookeWestSample]       StepMonitoring.java:98   | LINKS
+2023-07-21 20:54:26,201 INFO [BrookeWestSample]        SymbolsLinker.java:424  | No chord above PedalInter#4044{(0.209) PEDAL_MARK}
+2023-07-21 20:54:26,202 INFO [BrookeWestSample]        SymbolsLinker.java:424  | No chord above PedalInter#4048{(0.647) PEDAL_MARK}
+2023-07-21 20:54:26,203 INFO [BrookeWestSample]        SymbolsLinker.java:424  | No chord above PedalInter#4076{(0.276) PEDAL_MARK}
+2023-07-21 20:54:26,204 INFO [BrookeWestSample]        SymbolsLinker.java:424  | No chord above PedalInter#4080{(0.638) PEDAL_MARK}
+2023-07-21 20:54:26,222 INFO [BrookeWestSample]       StepMonitoring.java:98   | RHYTHMS
+2023-07-21 20:54:26,228 INFO [BrookeWestSample]       StepMonitoring.java:98   | PAGE
+2023-07-21 20:54:26,229 INFO [BrookeWestSample]       SheetReduction.java:154  | Gutter. Different glyphs 1/2 PedalInter#4048{(0.647/0.647) PEDAL_MARK} vs RestInter#4310{(0.577/0.577) stf:2 EIGHTH_REST p:-8.6}
+2023-07-21 20:54:26,230 INFO [BrookeWestSample]       SheetReduction.java:154  | Gutter. Different glyphs 4/5 RestInter#4654{(0.550/0.550) stf:6 QUARTER_REST p:6.0} vs EndingInter#3295{(0.795/0.941) stf:7 ENDING}
+2023-07-21 20:54:26,232 WARN [BrookeWestSample]         MeasureFixer.java:343  | System#1 No target duration for measures local IDs [1, 2, 3, 4], please check time signatures
+2023-07-21 20:54:26,233 WARN [BrookeWestSample]         MeasureFixer.java:343  | System#2 No target duration for measures local IDs [5, 6, 7, 8, 9], please check time signatures
+2023-07-21 20:54:26,234 WARN [BrookeWestSample]         MeasureFixer.java:343  | System#3 No target duration for measures local IDs [10, 11, 12], please check time signatures
+2023-07-21 20:54:26,235 WARN [BrookeWestSample]         MeasureFixer.java:343  | System#4 No target duration for measures local IDs [13, 14], please check time signatures
+2023-07-21 20:54:26,236 WARN [BrookeWestSample]         MeasureFixer.java:343  | System#5 No target duration for measures local IDs [15, 16, 17], please check time signatures
+2023-07-21 20:54:26,238 INFO [BrookeWestSample]                 Book.java:2535 | Book{BrookeWestSample} storing
+2023-07-21 20:54:26,348 INFO [BrookeWestSample]                 Book.java:2515 | Stored /book.xml
+2023-07-21 20:54:26,413 INFO [BrookeWestSample]           DataHolder.java:348  | Stored /sheet#1/BINARY.png
+2023-07-21 20:54:26,845 INFO [BrookeWestSample]                Sheet.java:1529 | Stored /sheet#1/sheet#1.xml
+2023-07-21 20:54:26,846 INFO [BrookeWestSample]                 Book.java:2476 | Book stored as /data/output/BrookeWestSample.omr
+2023-07-21 20:54:26,862 INFO [BrookeWestSample]            SheetStub.java:1605 | Disposed sheet
+2023-07-21 20:54:26,992 INFO [BrookeWestSample]                 Book.java:2035 | End of Stub#1 memory: 221,662,056
+2023-07-21 20:54:27,235 INFO [BrookeWestSample]            SheetStub.java:1044 | Loaded /sheet#1/sheet#1.xml
+2023-07-21 20:54:27,240 INFO [BrookeWestSample]      PartwiseBuilder.java:2645 | Exporting sheet(s): [#1]
+2023-07-21 20:54:27,242 INFO [BrookeWestSample]                 Part.java:353  | Sheet#1 System#1 Part#2{ staves[1] configs:[5]} dummyPart id: 1
+2023-07-21 20:54:27,244 INFO [BrookeWestSample]                 Part.java:353  | Sheet#1 System#2 Part#2{ staves[2] configs:[5]} dummyPart id: 1
+2023-07-21 20:54:27,251 INFO [BrookeWestSample]        ScoreExporter.java:164  | Score BrookeWestSample exported to /data/output/BrookeWestSample.mxl
+2023-07-21 20:54:27,324 INFO [BrookeWestSample]                Score.java:187  | Closing {Score 1}
